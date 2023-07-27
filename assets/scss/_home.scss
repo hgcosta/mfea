@@ -641,3 +641,487 @@ body {
     }
   }
 }
+
+.modulo-05 {
+  background-image: url("../img/bg-montanhas.png");
+  background-size: cover;
+  padding-bottom: 2rem;
+  background-position: center;
+  .content-modulo {
+    display: flex;
+    max-width: 1290px;
+    margin: auto;
+    position: relative;
+    @include tablet {
+      flex-direction: column-reverse;
+    }
+    .col-info {
+      width: 50%;
+      padding-left: 1rem;
+      margin-top: 4rem;
+      position: relative;
+      @include tablet {
+        width: 100%;
+        margin-top: 1rem;
+      }
+      h4 {
+        color: #300015;
+        font-family: pixel;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        font-size: 2rem;
+      }
+      h5 {
+        color: #fff;
+        font-family: pixel;
+        text-shadow: 1px 4px 2px #300015;
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+      h3 {
+        color: #fff;
+        font-family: pixel;
+        text-shadow: 1px 4px 2px #300015;
+        text-transform: uppercase;
+        margin: 1.5rem 0;
+        max-width: 530px;
+        position: relative;
+        z-index: 3;
+      }
+      ul {
+        max-width: 490px;
+        list-style-type: none;
+      }
+      li {
+        color: #fff;
+        font-family: text;
+        font-size: 1.2rem;
+        text-shadow: 1px 4px 2px #300015;
+        margin-bottom: 1rem;
+        position: relative;
+        max-width: 400px;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 10px;
+          left: -30px;
+          width: 20px;
+          height: 15px;
+          background-image: url("../icons/estrela.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        strong {
+          font-family: pixel;
+        }
+      }
+    }
+    .col-img {
+      width: 50%;
+      position: relative;
+      @include tablet {
+        width: 100%;
+      }
+      img {
+        width: 350px;
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+      }
+    }
+  }
+}
+
+.sobre-curso {
+  background: url("../img/bg-ceu.png");
+  background-size: cover;
+  background-position: top;
+  padding: 4rem 0 4rem 0;
+  height: 80vh;
+  display: flex;
+  @include tablet {
+    height: inherit;
+    padding: 2rem 0;
+  }
+  .content-sobre {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .col-info {
+    width: 100%;
+    h2 {
+      color: #fff;
+      font-family: pixel;
+      text-transform: uppercase;
+      font-size: 3.5rem;
+      text-shadow: 1px 4px 2px #417a8a;
+      position: relative;
+      max-width: 440px;
+      margin: 2rem auto;
+      @include tablet {
+        font-size: 1.75rem;
+      }
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 6px;
+        left: -60px;
+        width: 50px;
+        height: 50px;
+        background-image: url("../icons/star.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        // transform: rotate(-10deg);
+
+        @include tablet {
+          top: -7px;
+          left: 35px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: -60px;
+        width: 50px;
+        height: 50px;
+        background-image: url("../icons/star.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        // transform: rotate(10deg);
+        @include tablet {
+          top: -7px;
+          right: 35px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+    p {
+      color: #fff;
+      font-family: text;
+      text-shadow: 1px 4px 2px #417a8a91;
+      font-size: 1.5rem;
+      @include tablet {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+.aulas {
+  padding: 4rem 0 4rem 0;
+  background-color: #ed4e50;
+  h2 {
+    color: #fff;
+    font-family: pixel;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-shadow: 1px 4px 2px #b5393b;
+    max-width: 700px;
+    text-align: center;
+    margin: 0rem auto;
+    position: relative;
+    @include tablet {
+      font-size: 1.75rem;
+      max-width: inherit;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -40px;
+      left: 0px;
+      width: 90px;
+      height: 100px;
+      background-image: url("../icons/caveira-icon.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      @include tablet {
+        top: -40px;
+        left: 10px;
+        width: 40px;
+        height: 50px;
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50px;
+      right: -60px;
+      width: 80px;
+      height: 90px;
+      background-image: url("../icons/caveira-icon-2.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: rotate(10deg);
+      @include tablet {
+        top: -40px;
+        right: 10px;
+        width: 40px;
+        height: 50px;
+      }
+    }
+  }
+  #accordion {
+    max-width: 930px;
+    margin: 5rem auto 0 auto;
+    position: relative;
+    @include tablet {
+      max-width: inherit;
+      margin: 2rem auto 0 auto;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: -250px;
+      width: 320px;
+      height: 311px;
+      background-image: url("../img/rei-mobile.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: rotate(2deg);
+      @include tablet {
+        display: none;
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 50px;
+      right: -220px;
+      width: 320px;
+      height: 314px;
+      background-image: url("../img/prejuizo-mobile.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: rotate(18deg);
+      @include tablet {
+        display: none;
+      }
+    }
+    .card {
+      border: 1px solid rgb(237, 78, 80);
+      z-index: 88;
+    }
+    .card-header {
+      background-color: rgb(185, 59, 61);
+      border-bottom: 1px solid rgb(237, 78, 80);
+      @include tablet {
+        padding: 1rem 15px;
+      }
+    }
+    .btn-link {
+      color: #fff;
+      text-shadow: 1px 4px 2px #b5393b;
+      font-family: pixel;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.35rem;
+      @include tablet {
+        padding: 0;
+        font-size: 0.85rem;
+      }
+    }
+    ul {
+      list-style-type: none;
+    }
+    li {
+      color: #fff;
+      font-family: text;
+      font-size: 1.2rem;
+      text-shadow: 1px 4px 2px #b5393b;
+      position: relative;
+      margin-bottom: 1rem;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: -30px;
+        width: 20px;
+        height: 15px;
+        background-image: url("../icons/estrela.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      strong {
+        font-family: pixel;
+      }
+    }
+    .card-body {
+      border: solid 2px #b93b3d99;
+      background: #ed4e50;
+      padding: 1.25rem;
+      border-top: 0;
+      border-bottom: 0;
+    }
+    .last {
+      border-bottom: solid 2px #b93b3d99 !important;
+    }
+  }
+  .start {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    a {
+      text-decoration: none;
+      border: solid 2px #b5393b;
+      border-radius: 20px;
+      position: relative;
+      color: #fff;
+      font-family: pixel;
+      text-shadow: 1px 4px 2px #b5393b;
+      text-transform: uppercase;
+      padding: 0.5rem 2.5rem;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      background: #b5393b;
+      transition: all ease-in-out 0.5s;
+      &:hover {
+        border-radius: 5px;
+      }
+      &::after {
+        display: block;
+        content: "";
+        background-image: url("../icons/mouse.png");
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        right: 0;
+      }
+    }
+  }
+}
+
+.depoiments {
+  padding: 4rem 0;
+  background-color: #89c761;
+  position: relative;
+  .detalhe {
+    position: absolute;
+    right: 0;
+    top: -80px;
+    width: 190px;
+    height: 211px;
+    object-fit: cover;
+  }
+  .detalhe2 {
+    position: absolute;
+    bottom: 0;
+    width: 380px;
+    @include tablet {
+      width: 250px;
+    }
+  }
+  .content-depoiments {
+    position: relative;
+  }
+  h2 {
+    color: #fff;
+    font-family: pixel;
+    text-shadow: 1px 4px 2px #6d9c4f;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+    max-width: 490px;
+    margin: 1rem auto 2.5rem auto;
+    @include tablet {
+      position: relative;
+      z-index: 2;
+      font-size: 2rem;
+    }
+  }
+  .item {
+    &::after {
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #6d9c4f;
+      bottom: -11px;
+      content: "";
+      left: 1px;
+      margin-left: 0;
+      position: relative;
+    }
+
+    article {
+      background: #6d9c4f;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 1.5rem;
+      border-radius: 6px;
+      font-family: text;
+      position: relative;
+      border-bottom-left-radius: 6px;
+      max-width: 85%;
+      @include tablet {
+        max-width: inherit;
+        width: 100%;
+      }
+      .pessoa {
+        display: flex;
+        align-items: center;
+        img {
+          border-radius: 50%;
+          width: 35px;
+          height: 35px;
+        }
+        h4 {
+          margin-bottom: 0;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+  .start {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    @include tablet {
+      position: relative;
+      z-index: 2;
+    }
+    a {
+      text-decoration: none;
+      border: solid 2px #6d9c4f;
+      border-radius: 20px;
+      position: relative;
+      color: #fff;
+      font-family: pixel;
+      text-shadow: 1px 4px 2px #6d9c4f;
+      text-transform: uppercase;
+      padding: 0.5rem 2.5rem;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      background: #6d9c4f;
+      transition: all ease-in-out 0.5s;
+      &::after {
+        display: block;
+        content: "";
+        background-image: url("../icons/mouse.png");
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        right: 0;
+      }
+      &:hover {
+        border-radius: 5px;
+      }
+    }
+  }
+}
